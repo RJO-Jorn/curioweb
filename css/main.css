@@ -116,7 +116,7 @@ body{
   }
 
   header{
-    background-image: url("../img/Sanne\ Bas\ -\ Curio\ -\ Terheijdenseweg\ 350-1.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0)), url("../img/Sanne\ Bas\ -\ Curio\ -\ Terheijdenseweg\ 350-1.jpg");
     background-position:top;
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
