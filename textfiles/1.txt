@@ -1,0 +1,8 @@
+<p style="color:green">09:00 | Vrij</p>
+<p style="color:green">10:00 | Vrij</p>
+<p style="color:green">11:00 | Vrij</p>
+<p style="color:green">12:00 | Vrij</p>
+<p>13:00 | Engels</p>
+<p>14:00 | Web</p>
+<p>15:00 | Web</p>
+<p>16:00 | Mentor uur</p>

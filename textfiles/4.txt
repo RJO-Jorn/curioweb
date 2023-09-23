@@ -1,0 +1,8 @@
+<p style="color:green">09:00 | Vrij</p>
+<p>10:00 | Pro</p>
+<p>11:00 | Pra</p>
+<p>12:00 | Pra</p>
+<p>13:00 | Native</p>
+<p>14:00 | Native</p>
+<p>15:00 | Por</p>
+<p style="color:green">16:00 | Vrij</p>

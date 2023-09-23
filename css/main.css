@@ -88,7 +88,10 @@ textarea {
    ========================================================================== */
 body{
   width: 100%;
-  height: 100%;
+  height: 1500px;
+  background: linear-gradient(to right bottom, rgba(86,221,240), rgb(192,237,12)), url("../img/Sanne\ Bas\ -\ Curio\ -\ Terheijdenseweg\ 350-1.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 
@@ -99,8 +102,8 @@ body{
   white-space: nowrap;
   margin: 0 auto; 
   letter-spacing: .15em;
-  animation: 
-    typing 1.5s steps(20, end),
+  animation:
+    typing 1.5s steps(19, end),
     blink-caret .75s step-end infinite;
    }
 
@@ -109,27 +112,197 @@ body{
     to { width: 100% }
   }
   
-  /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: black; }
   }
 
+  main {
+    margin: 50px 7%;
+  }
+
   header{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0)), url("../img/Sanne\ Bas\ -\ Curio\ -\ Terheijdenseweg\ 350-1.jpg");
     background-position:top;
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-repeat: no-repeat;
     background-size: cover;
     width:100%;
     height:240px;
+    justify-content: space-around;
   }
 
 
+  header img {
+    top: 25%;
+    position:relative;
+    margin-left: 50px;
+    }
 
+  .container {
+    margin: 50px 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
+  .agenda-container {
+    box-shadow: 0 3px 9px black, inset 0 0 9px white;
+    position: relative;
+    border:5px solid transparent;
+    border-radius: 10%;
+    background: linear-gradient(to right bottom, rgba(86, 222, 240, 0.6), rgba(192,237,12, 0.6));
+    background-clip: padding-box;
+    width:380px;
+    height:580px;
+    padding:20px;
+  }
 
+  .agenda-container::after {
+    position: absolute;
+    top: -4px; bottom: -4px;
+    left: -4px; right: -4px;
+    background: linear-gradient(to right bottom, rgba(86,221,240), rgb(192,237,12));
+    border-radius: 5px;
+  }
 
+  #arrow-button {
+    background-color: rgba(255, 255, 255, 0.675);
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
 
+.arrow {
+  justify-content: baseline;
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    border-width: 20px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.agenda-inhoud {
+  margin-left: 120px;
+  font-size: 22px;
+  text-align:start;
+}
+
+#nextBtn.clicked .arrow {
+    transform: translateX(-100%) translate(-50%, -50%);
+    opacity: 0;
+}
+
+#prevBtn.clicked .arrow {
+  transform: translateX(100%) translate(-50%, -50%);
+  opacity: 0;
+
+}
+
+.agenda-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.agenda-day, .subject {
+  display: none;
+  font-size: 24px;
+  padding: 20px;
+  text-align: center;
+}
+
+.subject {
+  padding:3px 0 !important;
+  font-size: 28px;
+}
+
+.agenda-day.active, .subject.active {
+  display: block;
+}
+
+button {
+background-color: rgba(255, 255, 255, 0.675);
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(0, 123, 255, 1);
+  transform: scale(1.1);
+}
+
+.agenda-inhoud p {
+  color:white;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#agenda, #subject-Container{
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+#agenda.flying, #subject-Container.flying {
+  /* transform: translateX(-15%); */
+  opacity: 0;
+}
+
+.subject-inhoud {
+  margin: 20px;
+}
+
+.typewriter2 {
+  text-align: center;
+  font-family: monospace;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+#textWjd {
+  animation: typing 0.1s steps(4, end);
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+.agenda-header {
+  display:flex;
+  flex-direction: row;
+}
+
+.subject {
+  margin:0 15px;
+}
+
+.line{
+  width: 100%;
+  height: 0.125rem;
+  background-image: linear-gradient(-45deg, rgb(252,50,50), rgb(250,51,156), rgb(149,53,249), rgb(0,80,255), rgb(42,221,93));
+  margin-bottom: 10px;
+}
+
+.blur {
+  filter: blur(2px);
+}
 
 
 

@@ -1,0 +1,8 @@
+<p style="color:green">09:00 | Vrij</p>
+<p style="color:green">10:00 | Vrij</p>
+<p>11:00 | Native</p>
+<p>12:00 | Native</p>
+<p>13:00 | Web</p>
+<p>14:00 | Web</p>
+<p style="color:green">15:00 | Vrij</p>
+<p style="color:green">16:00 | Vrij</p>

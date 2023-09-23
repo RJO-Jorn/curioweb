@@ -1,0 +1,8 @@
+<p>09:00 | Codelab</p>
+<p style="color:green">10:00 | Vrij</p>
+<p>11:00 | Nederlands</p>
+<p>12:00 | Pro</p>
+<p style="color:green">13:00 | Vrij</p>
+<p style="color:green">14:00 | Vrij</p>
+<p style="color:green">15:00 | Vrij</p>
+<p style="color:green">16:00 | Vrij</p>

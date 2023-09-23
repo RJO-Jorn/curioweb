@@ -1,0 +1,1 @@
+Bij Native leer je de basis van computer programmeren en het maken van programma's die gebruikt kunnen worden voor het aansturen van micro controller. Na het eerste blok zul je leren werken met je eerste daadwerkelijke Programeertaal daarvoor, Python!
